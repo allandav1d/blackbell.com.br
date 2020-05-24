@@ -1,10 +1,48 @@
 import React from 'react';
 import './Projects.scss';
+import data from "./Projetos";
+import SwipeableViews from 'react-swipeable-views';
+import { virtualize } from 'react-swipeable-views-utils';
+import { mod } from 'react-swipeable-views-core';
 
-export default class Footer extends React.Component{
-  render(){
-    return(
-<div>Projetos</div>
-    );
+const VirtualizeSwipeableViews = virtualize(SwipeableViews);
+//Numero de projetos no JSON;
+const numProjects = Object.keys(data.Projetos).length;
+//retorna o numero de slides a ser criado de acordo com o numero projetos
+const numSliders = (numProjects/2).toFixed(); 
+
+function sliderRendered(params) {
+  const {index, key} = params;
+  let currentSlider = mod(index,numSliders);
+  let projectDown = (currentSlider+1) * 2;
+  let projectUp = ((currentSlider+1) * 2) - 1;
+  let projectInfoUp = Object(data.Projetos[projectUp-1]);
+  let projectInfoDown = Object(data.Projetos[projectDown-1]);
+
+  if(parseInt(currentSlider)+1 === parseInt(numSliders) && projectDown.projectName == undefined){
+    console.log("verrrrrrrrrrrrrrrrrrrrrrrrrrr");
+    projectInfoDown = Object(data.Projetos[projectUp-4]);
   }
-}
+  
+  return(
+    <div key={key} className="">
+
+    <div className="boxUp">
+    <p className="text">Official Page: {projectInfoUp.projectName}</p>   
+    <img className="img-boxUp" src={projectInfoUp.imgCover} alt=""/>
+    </div>
+    <div className="boxDown">
+    <p className="text">Official Page: {projectInfoDown.projectName}</p>   
+    <img className="img-boxDown" src={projectInfoDown.imgCover} alt=""/>
+    </div>
+    </div>
+    );
+  };
+  
+  function Projects(){
+    return(
+      <VirtualizeSwipeableViews className="project-container" slideClassName="project-slide" slideRenderer={sliderRendered} enableMouseEvents/>
+      );
+    }
+    
+  export default Projects;

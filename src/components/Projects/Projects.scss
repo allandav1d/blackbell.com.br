@@ -1,0 +1,87 @@
+.project-container{
+    padding: 1rem 26rem;
+    background-color: black;
+}
+.project-slide {
+    //padding: 15,
+    width: auto !important;
+    overflow: visible !important;
+    pointer-events: none;
+  }
+.project-col{
+    
+    position: relative !important;
+    min-width: 25vw;
+    height: 50vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    align-items: center;
+    overflow: hidden;
+}
+%box{
+    display: block;
+    border: 20vw;
+    position: relative !important;
+    margin: 5px;
+    width: 25rem;
+    height: 20rem;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover{
+        border: .3vw solid whitesmoke;
+    }
+}
+
+.boxUp {
+    -moz-transform: skew(25deg, 0deg);
+    -webkit-transform: skew(25deg, 0deg);
+    -o-transform: skew(25deg, 0deg);
+    -ms-transform: skew(25deg, 0deg);
+    transform: skew(25deg, 0deg);
+    @extend %box;
+}
+.boxDown {
+    -moz-transform: skew(-25deg, 0deg);
+    -webkit-transform: skew(-25deg, 0deg);
+    -o-transform: skew(-25deg, 0deg);
+    -ms-transform: skew(-25deg, 0deg);
+    transform: skew(-25deg, 0deg);
+    @extend %box;
+}
+%img{
+    width: 140%;
+    object-fit: cover;
+    display: flex;
+    height: -webkit-fill-available;
+    transform-origin: top;
+}
+.img-boxUp{
+    -moz-transform: skew(-25deg, 0deg);
+    -webkit-transform: skew(-25deg, 0deg);
+    -o-transform: skew(-25deg, 0deg);
+    -ms-transform: skew(-25deg, 0deg);
+    transform: skew(-25deg, 0deg);
+    transform-origin: top;
+    @extend %img;
+}
+.img-boxDown{
+    -moz-transform: skew(25deg, 0deg);
+    -webkit-transform: skew(25deg, 0deg);
+    -o-transform: skew(25deg, 0deg);
+    -ms-transform: skew(25deg, 0deg);
+    transform: skew(25deg, 0deg);
+    transform-origin: bottom;
+    @extend %img;
+}
+.text{
+    position: absolute;
+    z-index: 99;
+    pointer-events: all;
+    bottom: -20px;
+    right: 0px;
+    background-color: whitesmoke;
+    padding: .7rem .5rem;
+    border-radius: 25px 0px 0px;
+}
