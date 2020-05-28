@@ -10,6 +10,7 @@
     background: rgb(241, 196, 15);;
 }
 .social-list{
+    padding: 0rem;
     display: flex;
     justify-content: center;
     height: auto;
@@ -18,7 +19,7 @@
     list-style-type: none;
 }
 %social-item{
-    border-radius: 2.5vw;
+    border-radius: 40%;
     text-decoration: none;
     margin: .5rem 1rem;
     min-width: 7vw;
@@ -26,6 +27,10 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    a{
+        padding: 0 !important;
+        display: flex;
+    }
     &:hover{
         border: .3vw solid whitesmoke;
     }

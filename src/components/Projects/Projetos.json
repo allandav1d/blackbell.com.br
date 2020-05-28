@@ -2,37 +2,12 @@
     "Projetos":[
     {
         "projectName":"FateCatz",
-        "imgCover":"../img/1.PNG",
-        "officialPage":""
-    },
-    {
-        "projectName":"Jogo2",
-        "imgCover":"../img/1.PNG",
-        "officialPage":""
-    },
-    {
-        "projectName":"Jogo3",
-        "imgCover":"../img/1.PNG",
-        "officialPage":""
-    },
-    {
-        "projectName":"JogoAzulzinho",
-        "imgCover":"../img/1.PNG",
+        "imgCover":"../img/PojectsCovers/FateCatz.png",
         "officialPage":""
     },
     {
         "projectName":"Gaya",
-        "imgCover":"../img/1.PNG",
-        "officialPage":""
-    },
-    {
-        "projectName":"Você Merece",
-        "imgCover":"../img/1.PNG",
-        "officialPage":""
-    },
-    {
-        "projectName":"ricardinho",
-        "imgCover":"../img/1.PNG",
+        "imgCover":"../img/PojectsCovers/Gaya.png",
         "officialPage":""
     }
 ]

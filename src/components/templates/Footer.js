@@ -8,22 +8,22 @@ export default class Footer extends React.Component{
       <div className="social">
         <ul className="social-list">
           <li className="social-facebook">
-            <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.facebook.com/studiosBlackbell"><ion-icon name="logo-facebook"/></a>
           </li>
           <li className="social-twitter">
-          <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://twitter.com/StudioBlackbell"><ion-icon name="logo-twitter"/></a>
           </li>
           <li className="social-youtube">
-          <ion-icon name="logo-youtube"></ion-icon>
+            <a href="https://www.youtube.com/channel/UCHkXqMCJktaivhPNHQTIesQ/"><ion-icon name="logo-youtube"/></a>
           </li>
           <li className="social-linkedin">
-          <ion-icon name="logo-linkedin"></ion-icon>
+            <a href="https://www.linkedin.com/company/blackbellstudios/"><ion-icon name="logo-linkedin"/></a>
           </li>
           <li className="social-instagram">
-          <ion-icon name="logo-instagram"></ion-icon>
+            <a href="https://www.instagram.com/blackbellstudios/"><ion-icon name="logo-instagram"/></a>
           </li>
           <li className="social-pinterest">
-          <ion-icon name="logo-pinterest"></ion-icon>
+            <a href="https://br.pinterest.com/BlackbellStudios/"><ion-icon name="logo-pinterest"/></a>
           </li>
         </ul>
       </div>

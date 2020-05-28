@@ -1,17 +1,21 @@
 .project-container{
-    padding: 1rem 26rem;
+    //padding: 1rem 40vw;
+    padding: 1rem 29vw;
     background-color: black;
 }
 .project-slide {
-    //padding: 15,
-    width: auto !important;
+    //min-width: 21vw !important;
+    //max-width: 25vw !important;
+    min-width: 41vw !important;
+    max-width: 45vw !important;
     overflow: visible !important;
     pointer-events: none;
   }
 .project-col{
     
     position: relative !important;
-    min-width: 25vw;
+    //min-width: 25vw;
+    min-width: 45vw;
     height: 50vw;
     box-sizing: border-box;
     margin: 0;
@@ -22,15 +26,30 @@
 }
 %box{
     display: block;
-    border: 20vw;
+    background-color: whitesmoke;
+    //border: 20vw;
+    border: 40vw;
     position: relative !important;
     margin: 5px;
-    width: 25rem;
-    height: 20rem;
-    transition: 0.5s;
+    min-width: 40vw;
+    min-height: 40vw;
+    max-width: 45vw;
+    max-height: 45vw;
+    //min-width: 20vw;
+    //min-height: 20vw;
+    //max-width: 25vw;
+    //max-height: 25vw;
+    //transition: 0.5s;
     overflow: hidden;
     &:hover{
-        border: .3vw solid whitesmoke;
+        top: 0.5vw;
+        margin: 0px;
+        min-width: 40vw;
+        min-height: 40vw;
+        max-width: 40vw;
+        max-height: 40vw;
+        border: 40vww;
+        border: 0.3vw solid whitesmoke;
     }
 }
 
@@ -51,9 +70,11 @@
     @extend %box;
 }
 %img{
-    width: 140%;
+    width: 60vw !important;
+    height: 40vw !important;
+    //width: 30vw !important;
+    //height: 20vw !important;
     object-fit: cover;
-    display: flex;
     height: -webkit-fill-available;
     transform-origin: top;
 }

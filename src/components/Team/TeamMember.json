@@ -1,0 +1,40 @@
+{
+    "Member":[
+    {
+        "name":"Allan David",
+        "role":"Programador & Level Design",
+        "picture":"../img/ProfilePictures/Allan.png",
+        "portfolioLink":""
+    },
+    {
+        "name":"Gilberto Domingos",
+        "role":"Programador & SFX",
+        "picture":"../img/ProfilePictures/Gilberto.png",
+        "portfolioLink":""
+    },
+    {
+        "name":"Henrique Augusto",
+        "role":"Compositor & Efeitos sonoros",
+        "picture":"../img/ProfilePictures/Henrique.png",
+        "portfolioLink":""
+    },
+    {
+        "name":"Jessica Crevelari",
+        "role":"2D & 3D Animation",
+        "picture":"../img/ProfilePictures/Jessica.png",
+        "portfolioLink":""
+    },
+    {
+        "name":"Leonardo Sassi",
+        "role":"2D & 3D Animation",
+        "picture":"../img/ProfilePictures/Leonardo.png",
+        "portfolioLink":""
+    },
+    {
+        "name":"Ricardo Martins",
+        "role":"Planejamento & Midias",
+        "picture":"../img/ProfilePictures/Ricardo.png",
+        "portfolioLink":""
+    }
+]
+}
