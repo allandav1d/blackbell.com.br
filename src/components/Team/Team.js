@@ -28,12 +28,12 @@ class Team extends Component{
             <div className="row justify-content-center text-white pb-5">
             {data.Member.map((member, i) => {
                 return(
-                    <div key={i} className="col-6 py-3">
+                    <div key={i} className="col-sm-12 col-md-6 py-3">
                     <div className="row align-items-end">
-                    <div className="col-3">
+                    <div className="col-md-4 col-lg-3">
                     <img style={styles.imgPictures} src={member.picture} alt="" width="100vw" height="100vw"/>
                     </div>
-                    <div className="col-9">
+                    <div className="col-md-8 col-lg-9">
                     <h5>{member.name}</h5>
                     <hr style={styles.hr}/>
                     <h6 style={styles.roleBorder} >{member.role}</h6>

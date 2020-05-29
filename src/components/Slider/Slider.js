@@ -33,10 +33,10 @@ function Slider(){
                 );
             })} 
             <button id="goLeft"  onClick={goLeft}>
-            <i className="fas fa-chevron-left"></i>  
+            <ion-icon name="chevron-back-outline"></ion-icon>
             </button>
             <button id="goRight" onClick={goRight}>
-            <i className="fas fa-chevron-right"></i>  
+            <ion-icon name="chevron-forward-outline"></ion-icon>
             </button>
             </div>
             )

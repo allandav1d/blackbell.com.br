@@ -1,6 +1,17 @@
 import React from 'react';
 import './Footer.scss';
 
+const styles ={
+  Links: {
+    textDecoration: "none",
+    paddingTop: '0px !important',
+    paddingBotton: '0px !important',
+      "&:hover":{
+        border: '.3vw solid whitesmoke'
+      }
+  }
+};
+
 export default class Footer extends React.Component{
   render(){
     return(
@@ -29,43 +40,19 @@ export default class Footer extends React.Component{
       </div>
       <div className="footer-body container-fluid text-center text-md-left">
         <div className="row">
-          <div className="col-md-6 mt-md-0 mt-3">
-            <h5 className="text-uppercase text-white">Footer Content</h5>
-            <p className="text-white">Here you can use rows and columns to organize your footer content.</p>
-          </div>
-      <hr className="clearfix w-100 d-md-none pb-3"/>
-      <div className="col-md-3 mb-md-0 mb-3">
-        <h5 className="text-uppercase text-white">Links</h5>
+      <div className="col-md-12 py-3">
         <ul className="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a style={styles.Links} href="#!">Imprensa</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a style={styles.Links} href="#!">Política de privacidade</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a style={styles.Links} href="#!">Termos de serviço</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <div className="col-md-3 mb-md-0 mb-3">
-        <h5 className="text-uppercase text-white">Links</h5>
-
-        <ul className="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
+            <a style={styles.Links} href="#!">Suporte ao jogador</a>
           </li>
         </ul>
       </div>

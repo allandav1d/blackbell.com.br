@@ -35,7 +35,6 @@
         border: .3vw solid whitesmoke;
     }
 }
-
 .social-facebook{
     background-color: #3b5998;
     @extend %social-item;
@@ -60,7 +59,6 @@
     background-color: #c8232c;
     @extend %social-item;
 }
-
 ion-icon{
     font-size: 4vw;
     color: whitesmoke;
@@ -91,5 +89,16 @@ ion-icon{
     ion-icon{
         padding-left: .5rem;
         font-size: 2vw;
+    }
+}
+.list-unstyled{
+    display: flex;
+    margin: auto;
+    li{
+        margin: auto;
+        font-size: medium;
+        a{
+            padding: 0px;
+        }
     }
 }
