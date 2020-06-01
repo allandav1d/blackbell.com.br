@@ -19,4 +19,8 @@ li > a {
     text-decoration: none;
     color: #000000 !important;
     background: rgb(241, 196, 15) none repeat scroll left top;
+
+}
+.active > a {
+    color: #000000 !important;
 }

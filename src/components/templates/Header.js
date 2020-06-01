@@ -2,19 +2,26 @@ import React, { useState } from 'react';
 import './Header.css';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-const linkActive = ['active','','',''];
 
 class Header extends React.Component{
-  
+  constructor(props){
+    super(props);
+    this.state = {
+      linkActive : ['active','','','']
+    }
+  }
+
   setActiveNav(param) {
-    for (let index = 0; index < linkActive.length; index++) {
+    let newArray = ['','','','']
+    for (let index = 0; index < newArray.length; index++) {
       if(index === param){
-        linkActive[index] = 'active'
+        newArray[index] = 'active'
       }else{
-        linkActive[index] = ''
+        newArray[index] = ''
       }
     }
-      console.log(linkActive);
+    this.setState({ linkActive: newArray})
+      console.log(newArray);
   }
   
   scrollTo(nameElement, itemId) {
@@ -37,16 +44,16 @@ class Header extends React.Component{
           <a className="navbar-brand" href="#home">
           <img className="navbar-brand-img" src="img/Blackbell-logo.svg" alt=""/></a>
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li  className={`nav-item ${linkActive[0]}`} activeClassName="Active">
+              <li  className={`nav-item ${this.state.linkActive[0]}`} activeClassName="Active">
                 <a className="nav-link" onClick={() => this.scrollTo('home',0)}>Home <span className="sr-only">(current)</span></a>
               </li >
-              <li  className={`nav-item ${linkActive[1]}`}  activeClassName="Active">
+              <li  className={`nav-item ${this.state.linkActive[1]}`}  activeClassName="Active">
                 <a className="nav-link" onClick={() => this.scrollTo('quemSomos',1)}>Quem somos</a>
               </li >
-              <li className={`nav-item ${linkActive[2]}`} activeClassName="Active">
+              <li className={`nav-item ${this.state.linkActive[2]}`} activeClassName="Active">
                 <a className="nav-link" onClick={() => this.scrollTo('Projects',2)}>Projetos</a>
               </li>
-              <li className={`nav-item ${linkActive[3]}`} activeClassName="Active">
+              <li className={`nav-item ${this.state.linkActive[3]}`} activeClassName="Active">
                 <a className="nav-link" onClick={() => this.scrollTo('Teams',3)}>Team</a>
               </li>
             </ul>
